@@ -3,4 +3,4 @@ node_modules
 .sass-cache
 .idea/workspace.xml
 
-bower_components
+/bower_components
