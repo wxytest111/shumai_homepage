@@ -1,0 +1,1 @@
+$(function(){var a=function(a){$(".shanzi li").each(function(b){var c=(a+b)%24,d=15*c,e=0===d?360:(360-d)%360;$(this).css({"-webkit-transform":"rotate("+d+"deg)","-moz-transform":"rotate("+d+"deg)","ms-transform":"rotate("+d+"deg)","z-index":e})})};a(0),$(".shanzi li").click(function(){var b=$(this).index();a(-b)})});

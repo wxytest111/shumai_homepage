@@ -1,6 +1,7 @@
 node_modules
 .tmp
 .sass-cache
-.idea/workspace.xml
+.idea/
+.DS_Store
 
 /bower_components
