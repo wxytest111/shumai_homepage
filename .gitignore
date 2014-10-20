@@ -1,7 +1,7 @@
 node_modules
 .tmp
 .sass-cache
-.idea/
+.idea/*
 .DS_Store
 
 /bower_components

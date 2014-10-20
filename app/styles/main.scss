@@ -15,6 +15,7 @@ body {
   padding-bottom: 20px;
   background: url('../images/earth1.jpg') no-repeat;
   background-attachment: fixed;
+  height: 1800px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -63,7 +64,6 @@ body {
 }
 /* Main marketing message and sign up button */
 .jumbotron {
-  margin-top: 400px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
@@ -109,6 +109,8 @@ body {
 //}
 
 .shanzi-container {
+  margin-top: 400px;
+  height: 480px;
   width: 100%;
 }
 .shanzi li {
@@ -116,7 +118,7 @@ body {
   position: absolute;
   padding: 40px;
   height: 320px;
-  width: 180px;
+  width: 300px;
   font-size: 100px;
   line-height: 160px;
   text-align: center;
@@ -143,21 +145,4 @@ body {
 .shanzi li:nth-child(4) {background-color: rgb(234, 182, 255);}
 .shanzi li:nth-child(5) {background-color: rgb(255, 182, 255);}
 .shanzi li:nth-child(6) {background-color: rgb(255, 182, 234);}
-.shanzi li:nth-child(7) {background-color: rgb(255, 182, 218);}
-.shanzi li:nth-child(8) {background-color: rgb(255, 182, 198);}
-.shanzi li:nth-child(9) {background-color: rgb(255, 182, 182);}
-.shanzi li:nth-child(10) {background-color: rgb(255, 198, 182);}
-.shanzi li:nth-child(11) {background-color: rgb(255, 218, 182);}
-.shanzi li:nth-child(12) {background-color: rgb(255, 234, 182);}
-.shanzi li:nth-child(13) {background-color: rgb(255, 255, 182);}
-.shanzi li:nth-child(14) {background-color: rgb(234, 255, 182);}
-.shanzi li:nth-child(15) {background-color: rgb(218, 255, 182);}
-.shanzi li:nth-child(16) {background-color: rgb(198, 255, 182);}
-.shanzi li:nth-child(17) {background-color: rgb(182, 255, 182);}
-.shanzi li:nth-child(18) {background-color: rgb(182, 255, 198);}
-.shanzi li:nth-child(19) {background-color: rgb(182, 255, 218);}
-.shanzi li:nth-child(20) {background-color: rgb(182, 255, 234);}
-.shanzi li:nth-child(21) {background-color: rgb(182, 255, 255);}
-.shanzi li:nth-child(22) {background-color: rgb(182, 234, 255);}
-.shanzi li:nth-child(23) {background-color: rgb(182, 218, 255);}
-.shanzi li:nth-child(24) {background-color: rgb(182, 198, 255);}
+.shanzi li:nth-child(7) {background-color: rgb(255, 182, 220);}
