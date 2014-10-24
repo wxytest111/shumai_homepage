@@ -15,7 +15,7 @@ body {
   padding-bottom: 20px;
   background: url('../images/earth1.jpg') no-repeat;
   background-attachment: fixed;
-  height: 1800px;
+//  height: 1800px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -66,6 +66,11 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  color: #ffffff;
+  background-color: transparent;
+  p {
+    text-align: left;
+  }
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -109,22 +114,21 @@ body {
 //}
 
 .shanzi-container {
-  margin-top: 400px;
-  height: 480px;
+  padding-top: 100px;
+  height: 680px;
   width: 100%;
 }
 .shanzi li {
   list-style-type: none;
   position: absolute;
   padding: 40px;
-  height: 320px;
+  height: 480px;
   width: 300px;
   font-size: 100px;
   line-height: 160px;
   text-align: center;
   left: 50%;
   margin-left: -130px;
-  box-shadow: 0 0 50px 1px #888;
 
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 200%;
@@ -139,10 +143,45 @@ body {
   transition: all 2s ease-in-out;
 }
 
-.shanzi li:nth-child(1) {background-color: rgb(182, 182, 5);  }
-.shanzi li:nth-child(2) {background-color: rgb(198, 182, 5);  }
-.shanzi li:nth-child(3) {background-color: rgb(218, 182, 5);  }
-.shanzi li:nth-child(4) {background-color: rgb(234, 182, 255);}
-.shanzi li:nth-child(5) {background-color: rgb(255, 182, 255);}
-.shanzi li:nth-child(6) {background-color: rgb(255, 182, 234);}
-.shanzi li:nth-child(7) {background-color: rgb(255, 182, 220);}
+.shanzi li:nth-child(1) {
+  background-color: #6bc4ca;
+  background: url('/images/projects/p1.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(2) {
+  background-color: #2a2b39;
+  background: url('/images/projects/p2.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(3) {
+  background-color: #517ac0;
+  background: url('/images/projects/p3.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(4) {
+  background-color: #b65d87;
+  background: url('/images/projects/p4.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(5) {
+  background-color: #38282c;
+  background: url('/images/projects/p5.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(6) {
+  background-color: #f4d60d;
+  background: url('/images/projects/p6.png');
+  background-size: 300px 480px;
+}
+.shanzi li:nth-child(7) {
+  background-color: #517ac0;
+  background: url('/images/projects/p7.png');
+  background-size: 300px 480px;
+}
+
+.shanzi li:nth-child(8) {
+  background-color: #a23d87;
+  background: url('/images/projects/p8.png');
+  background-size: 300px 480px;
+}
+

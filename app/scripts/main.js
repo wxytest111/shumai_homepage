@@ -1,47 +1,27 @@
 $(function () {
 
-//  var rotate = function (startIndex) {
-//    $('.shanzi li').each(function (index) {
-//      var offset = (startIndex + index) % 6;
-//      var deg = -50 + 20 * offset;
-//      var zIndex = deg === 0 ? 50 : (50 - deg) % 50;
-//      $(this).css({
-//        '-webkit-transform': 'rotate(' + deg + 'deg)',
-//        '-moz-transform': 'rotate(' + deg + 'deg)',
-//        'ms-transform': 'rotate(' + deg + 'deg)',
-//        'z-index': zIndex
-//      });
-//    });
-//  };
-//
-//  rotate(0);
-//
-//  $('.shanzi li').click(function () {
-//    var startIndex = $(this).index();
-//    rotate(-startIndex);
-//  });
-
-
-  var b = {0: {degree: "0deg", z: 1000}, 1: {degree: "10deg", z: 950}, 2: {degree: "20deg", z: 900}, 3: {degree: "30deg", z: 850}, 4: {degree: "40deg", z: 800}, 5: {degree: "-30deg", z: 850}, 6: {degree: "-20deg", z: 900}, 7: {degree: "-10deg", z: 950}};
-  var c = $(".shanzi-container").offset().top + 10;
-  var d = true;
-  var a = function () {
-    d = false;
+  var positions = {0: {degree: "-5deg", z: 1000}, 1: {degree: "5deg", z: 950}, 2: {degree: "15deg", z: 900}, 3: {degree: "25deg", z: 850}, 4: {degree: "35deg", z: 800}, 5: {degree: "-35deg", z: 850}, 6: {degree: "-25deg", z: 900}, 7: {degree: "-15deg", z: 950}};
+  var windowSize = $(".shanzi-container").offset().top + 10;
+  var flag = true;
+  var start = function () {
+    flag = false;
     $(".shanzi li").each(function () {
-      var g = $(this);
-      var e = g.data("index");
-      var f = b[e].degree;
-      g.css({"-webkit-transform": "rotate(" + f + ")", "-moz-transform": "rotate(" + f + ")", "ms-transform": "rotate(" + f + ")", "z-index": b[e].z})
+      var li = $(this);
+      var e = li.data("index");
+      var f = positions[e].degree;
+      li.css({"-webkit-transform": "rotate(" + f + ")", "-moz-transform": "rotate(" + f + ")", "ms-transform": "rotate(" + f + ")", "z-index": positions[e].z})
     })
   };
-  if ($(window).height() > c) {
-    a()
+  if ($(window).height() > windowSize) {
+    start()
   }
   $(window).scroll(function () {
-    var e = $(document).scrollTop();
-    if (d && e + $(window).height() > c) {
-      a()
+    var scrollTop = $(document).scrollTop();
+    if (flag && scrollTop + $(window).height() > windowSize) {
+      start()
     }
+
+    $('body').css({"backgroundPosition": 0+'px '+(-scrollTop/3)+'px'});
   });
   $(".shanzi li").click(function () {
     var e = $(this).data("index");
@@ -49,10 +29,11 @@ $(function () {
       var i = $(this);
       var f = i.data("index");
       var g = (f - e + 8) % 8;
-      var h = b[g].degree;
+      var h = positions[g].degree;
       i.data("index", g);
-      i.css({"-webkit-transform": "rotate(" + h + ")", "-moz-transform": "rotate(" + h + ")", "ms-transform": "rotate(" + h + ")", "z-index": b[g].z})
+      i.css({"-webkit-transform": "rotate(" + h + ")", "-moz-transform": "rotate(" + h + ")", "ms-transform": "rotate(" + h + ")", "z-index": positions[g].z})
     })
   })
+
 })
 ;
