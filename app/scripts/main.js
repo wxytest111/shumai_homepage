@@ -21,7 +21,7 @@ $(function () {
       start()
     }
 
-    $('body').css({"backgroundPosition": 0+'px '+(-scrollTop/3)+'px'});
+    $('body').css({"backgroundPosition": 0+'px '+(-scrollTop/4)+'px'});
   });
   $(".shanzi li").click(function () {
     var e = $(this).data("index");
