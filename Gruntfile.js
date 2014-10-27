@@ -374,9 +374,18 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    jasmine : {
+      src : ['app/scripts/Player.js','app/scripts/Song.js'],
+      options : {
+        specs : 'test/spec/**/*.js',
+        vendors: ['bower_components/jquery/dist/jquery.min.js','bower_components/jasmine/lib/jasmine-core/jasmine.js']
+      }
     }
   });
 
+
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
     if (grunt.option('allow-remote')) {
@@ -412,7 +421,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'connect:test',
-      'mocha'
+      'jasmine'
     ]);
   });
 

@@ -1,26 +1,26 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Mocha Spec Runner</title>
-    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
-</head>
-<body>
-    <div id="mocha"></div>
-    <script src="bower_components/mocha/mocha.js"></script>
-    <script>mocha.setup('bdd')</script>
-    <script src="bower_components/chai/chai.js"></script>
-    <script>
-        var assert = chai.assert;
-        var expect = chai.expect;
-        var should = chai.should();
-    </script>
+    <title>Jasmine Spec Runner</title>
 
-    <!-- include source files here... -->
+    <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/jasmine_favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css">
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/boot.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- include spec files here... -->
-    <script src="spec/test.js"></script>
+    <script type="text/javascript" src="../app/scripts/Player.js"></script>
+    <script type="text/javascript" src="../app/scripts/Song.js"></script>
 
-    <script>mocha.run()</script>
+    <!-- include source files here... -->
+    <script type="text/javascript" src="spec/PlayerSpec.js"></script>
+
+</head>
+
+<body>
 </body>
 </html>
