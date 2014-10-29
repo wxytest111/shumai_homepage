@@ -110,6 +110,16 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    padding-bottom: 0px;
+  }
+
+  .qr-code {
+    margin: 0 auto 20px;
+    width: 129px;
+    height: 129px;
+    background: url("/images/qrcode_for_gh_12.jpg");
+    background-size: 129px 129px;
+
   }
 //}
 
