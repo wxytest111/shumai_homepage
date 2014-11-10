@@ -1,0 +1,17 @@
+
+
+1.install node
+    wget http://nodejs.org/dist/node-latest.tar.gz
+    tar zxf node-v0.xxx.tar.gz
+    cd node-v0.xxx
+    ./configure
+    make
+    make install
+2.npm install -g bower
+3.npm install -g grunt-cli
+4.bower install --allow-root
+5.npm install
+(if you don't have sass, you can run commands below)
+*6. yum install ruby
+*7. yum install rubygems
+*8. gem install sass
