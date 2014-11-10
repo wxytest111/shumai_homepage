@@ -1,5 +1,13 @@
 #!/bin/bash
 
+npm install bower
+
+npm install grunt-cli
+
+bower install
+
+npm install
+
 grunt build
 
 tar -cvf dist.tar dist/
