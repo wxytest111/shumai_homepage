@@ -6,6 +6,8 @@ npm install grunt-cli
 
 bower install
 
+npm cache clean
+
 npm install
 
 grunt build --force
