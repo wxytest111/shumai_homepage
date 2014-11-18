@@ -1,8 +1,9 @@
+'use strict';
 function Song(name) {
   this.name = name;
 }
 
-Song.prototype.persistFavoriteStatus = function(value) {
+Song.prototype.persistFavoriteStatus = function() {
   // something complicated
-  throw new Error("not yet implemented");
+  throw new Error('not yet implemented');
 };

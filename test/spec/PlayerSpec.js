@@ -1,4 +1,4 @@
-describe("Player", function() {
+describe('Player', function() {
   var player;
   var song;
 
@@ -7,7 +7,7 @@ describe("Player", function() {
     song = new Song('abc');
   });
 
-  it("should be able to play a Song", function() {
+  it('should be able to play a Song', function() {
     player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
   });
@@ -15,15 +15,15 @@ describe("Player", function() {
 
 });
 
-describe("AA", function () {
+describe('AA', function () {
   beforeEach(function() {
     player = new Player();
     player = jasmine.createSpyObj('obj',['play']);
     song = new Song('abc');
-    player.play(song)
+    player.play(song);
   });
 
-  it("should be able to play a Song", function() {
+  it('should be able to play a Song', function() {
     expect(player.play).toHaveBeenCalled();
   });
 });
