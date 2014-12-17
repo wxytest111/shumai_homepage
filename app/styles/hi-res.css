@@ -1,0 +1,35 @@
+body {
+	background: url(/images/new-version/bgd-body.jpg) repeat fixed;
+}
+#wrapper {
+	width: 1120px;
+	padding: 0;
+}
+#header {
+	width: 1120px;
+	position: fixed;
+	z-index: 10;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+#header.pinned {
+	-webkit-box-shadow: 0px 8px 17px -8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 17px -8px rgba(0, 0, 0, 0.1);
+}
+#content {
+	padding: 230px 0 60px;
+}
+#footer-wrap {
+	width: 1120px;
+	background: #5f656f;
+	padding: 60px 0 30px;
+}
+
+/* ----- Homepage ----- */
+
+#banner {
+	width: 1010px;
+	margin: 200px auto 30px;
+}
