@@ -5,12 +5,26 @@
   <title>ShuMai</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/mobile.css -->
   <link rel="stylesheet" href="styles/mobile.css">
-  <link rel="stylesheet" href="styles/desk.css" media="screen and (min-width: 767px)">
-  <link rel="stylesheet" href="styles/hi-res.css" media="screen and (min-width: 1300px)">
-  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
 
+  <!-- build:css(.tmp) styles/desk.css -->
+  <link rel="stylesheet" href="styles/desk.css" media="screen and (min-width: 767px)">
+  <!-- endbuild -->
+
+  <!-- build:css(.tmp) styles/hi-res.css -->
+  <link rel="stylesheet" href="styles/hi-res.css" media="screen and (min-width: 1300px)">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
   <!--[if lte IE 9]>
   <script src="http://www.colingrist.com/wp-content/themes/mill/scripts/respond.js"></script>
   <![endif]-->
@@ -135,11 +149,13 @@
   </div>
 
 </footer>
-
-<link rel="stylesheet" id="jetpack-subscriptions-css" href="styles/subscriptions.css" type="text/css" media="all">
-
 </body>
+<!-- build:js(.) scripts/jquery.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/masonry.js"></script>
 <script src="scripts/functions.js"></script>
+<!-- endbuild -->
 </html>
