@@ -1,5 +1,11 @@
 #!/bin/bash
 
+set -e
+
+#rm -fr ~/.npm
+
+#npm cache clean
+
 npm install bower
 
 npm install grunt-cli
