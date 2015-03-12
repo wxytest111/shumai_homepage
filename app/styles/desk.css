@@ -738,51 +738,59 @@ body.error404 #col-right {
 .shanzi li {
   list-style-type: none;
   float: left;
-  height: 480px;
+  height: 430px;
   width: 300px;
   font-size: 100px;
   line-height: 160px;
-  background-size: 300px 480px;
+  background-size: 300px 430px;
 }
-
-.shanzi .intel {
-  width: 533px;
-  background-size: 300px 533px;
-}
-
 
 .shanzi li:nth-child(1) {
-  background-color: #6bc4ca;
-  background: url('/images/projects/p1_480.jpg');
+  background-color: #517ac0;
+  background: url('/images/projects/p10_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(2) {
   background-color: #2a2b39;
   background: url('/images/projects/p2_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(3) {
   background-color: #517ac0;
   background: url('/images/projects/p3_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(4) {
   background-color: #b65d87;
   background: url('/images/projects/p4_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(5) {
-  background-color: #38282c;
-  background: url('/images/projects/p5_480.jpg');
+  background-color: #6bc4ca;
+  background: url('/images/projects/p1_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(6) {
   background-color: #f4d60d;
   background: url('/images/projects/p6_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
 .shanzi li:nth-child(7) {
-  background-color: #517ac0;
-  background: url('/images/projects/p10_480.jpg');
+  background-color: #38282c;
+  background: url('/images/projects/p5_480.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
 }
-
 .shanzi li:nth-child(8) {
   background-color: #a23d87;
-  background: url('/images/projects/intel_480.jpg');
+  background: url('/images/projects/p9_480.jpg');
+  background-position: 0px -55px;
 }
 
 .qr-code {
